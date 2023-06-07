@@ -1,0 +1,54 @@
+/* just default everything to flex*/
+body, body * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    flex-direction: column;
+}
+
+.form {
+    flex-direction: column;
+    justify-content: end;
+    
+    padding: 5px;
+    margin: 5px;
+    
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-input {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    padding: 2px;
+}
+
+.form-input > label {
+    width: 100%;
+    text-align: left;
+    
+    padding: 2px;
+}
+
+#api-key {
+    font-display: none;
+}
+
+.feedback {
+    flex-direction: column;
+    
+    max-width: 720px;
+
+    padding: 5px;
+    margin: 5px;
+    
+    border: 1px solid black;
+    border-radius: 5px;
+}

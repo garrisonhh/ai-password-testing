@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="garrisonhh">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chatgpt password testing ground</title>
+  <!-- zxcvbn -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"
+    integrity="sha512-TZlMGFY9xKj38t/5m2FzJ+RM/aD5alMHDe26p0mYUMoCF5G7ibfHUQILq0qQPV3wlsnCwL+TPRNK4vIWGLOkUQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1 id="title"></h1>
+  <div class="form">
+    <div class="form-input">
+      <label for="api-key">openai api key</label>
+      <input id='api-key' type="password">
+    </div>
+    <div class="form-input">
+      <label for="password">password</label>
+      <input id="password" type="text">
+    </div>
+    <input id="send" type="button" value="send">
+  </div>
+  <div class="feedback">
+    <h3>zxcvbn</h3>
+    <div id="feedback-zxcvbn"></div>
+  </div>
+  <div class="feedback">
+    <h3>chatgpt</h3>
+    <div id="feedback-chatgpt"></div>
+  </div>
+</body>
+</html>
